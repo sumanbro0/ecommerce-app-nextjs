@@ -42,7 +42,7 @@ export const createCheckoutSession = async (products: ProductStorage[]) => {
       name: product.title,
       images: product.images.map(value => value.url),
       default_price_data: {
-        currency: 'USD',
+        currency: 'NPR',
         unit_amount: product.price * 100,
       }
     })
